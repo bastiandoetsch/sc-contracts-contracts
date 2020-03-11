@@ -9,6 +9,7 @@ currency = "EUR"
 
 Contract.make {
     description("should send a payment released event")
+    label("paymentReleased")
     input {
         triggeredBy("releasePayment(\"$paymentId\", \"$amount\", \"$currency\")")
     }
